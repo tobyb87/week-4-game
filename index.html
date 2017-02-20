@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Game</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-12">
+				<div id="crystals" class="text-center">
+					<div class="inline">
+						<img id="crystal-1" class="crystal-img" src="assets/images/crystal1.gif">
+					</div>
+
+					<div class="inline">
+						<img id="crystal-2" class="crystal-img" src="assets/images/crystal2.gif">
+					</div>
+
+					<div class="inline">
+						<img id="crystal-3" class="crystal-img" src="assets/images/crystal3.gif">
+					</div>
+
+					<div class="inline">
+						<img id="crystal-4" class="crystal-img" src="assets/images/crystal4.gif">
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="col-md-12">
+					<div id="explanation" class="panel panel-default center-block">
+						<div class="panel-heading"><h1>How to play the game.</h1></div>
+						<div class="panel-body">
+						<h2>You will be given a random rumber at the start of the game.</h2>
+
+						<h3>There are four crystals above.  By clicking on a crystal you will add a specific amount of points to your totoal score.</h3>
+
+						<h3>The value of each crystal is hidden from you until you click on it.</p>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-md-5">
+					<div class="panel-group">
+						<div class="panel panel-default">
+							<div class="panel-heading">Target Score</div>
+							<div class="panel-body">
+								<div id="target-score">&nbsp;</div>
+							</div>
+
+							<div class="panel-heading">Current Score</div>
+							<div class="panel-body">
+								<div id="current-score">&nbsp;</div>
+							</div>
+
+							<div class="panel-heading">Your Stats</div>
+							<div class="panel-body">
+								<div>Wins: <span id="win-count"> </span></div>
+								<div>Losses: <span id="loss-count"> </span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="assets/javascript/game.js"></script>
+</body>
+</html>
